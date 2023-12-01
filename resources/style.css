@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     min-height: 100vh;
 } 
@@ -7,17 +7,12 @@ body {
 .hero,
 .footer {
     background-color: #1f2937;
-
 }
 
-.hero {
-    
-}
 
 .navbar {
     padding: 8px 100px;
     margin: 0;
-  
 }
 
 .logo {
@@ -33,12 +28,13 @@ li {
 
 a {
     text-decoration: none;
-
 }
 
 .hero-box {
     margin-left: 100px;
     border: 1px solid lightcoral;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-title {
@@ -58,6 +54,11 @@ button {
     color: #f9faf8;
     padding: 4px 20px;
     border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.hero button {
+    border: 1px solid #3882f6;
 }
 
 .hero-img {
@@ -66,42 +67,72 @@ button {
     flex-shrink: 0;
 }
 
-/* SECTION TWO */
+/* SECTION TWO CARDS */
 
 h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
-}
-
-.info {
     text-align: center;
 }
 
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+}
 
-/* SECTION THREE */
+.card p {
+    text-align: center;
+}
+
+.card img,
+.card p {
+    height: 148px;
+    width: 148px;
+    margin: 0;
+}
+
+.card img {
+    border: 3px solid #3882f6;
+    border-radius: 10px;    
+}
+
+/* SECTION THREE FILLER/QUOTE */
 
 .filler {
     background-color: #e5e7eb;
     color: #1f2937;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 } 
 
+.filler div {
+    width: 784px;
+    padding: 100px;
+}
+
 .quote {
     font-size: 36px;
+    font-weight: 300;
     font-style: italic;
-    
+    margin: 0;
+}
+
+.filler span {
+    display: flex;
+    justify-content: flex-end;
+    width: 748px;
 }
 
 .thor {
     font-size: 18px;
     font-weight: 900;
     align-self: flex-end;
+    margin: 0;
 }
 
-/* SECTION FOUR */
+/* SECTION FOUR CALL TO ACTION*/
 
 .action {
     background-color: #3882f6;
@@ -111,12 +142,19 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 8px;
 }
 
-.call {
-
+.action button {
+    border: 1px solid #f9faf8;
 }
 
-.button {
-    
+/*  FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94px;
+    color: #f9faf8;
 }
