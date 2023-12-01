@@ -11,13 +11,23 @@ body {
 
 
 .navbar {
-    padding: 8px 100px;
+    /* padding: 8px 100px; */
     margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    margin-left: 100px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+    border: 1px solid yellow;
 }
 
 li {
@@ -35,18 +45,21 @@ a {
     border: 1px solid lightcoral;
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 
-.hero-title {
+.hero-box h1 {
     font-size: 48px;
     color: #e5e7eb;
     font-weight: 900;
     border: 1px solid red;
+    margin: 0;
 }
 
-.hero-text {
+.hero-box p {
     font-size: 18px;
     color: #e5e7eb;
+    margin: 0;
 }
 
 button {
@@ -54,11 +67,15 @@ button {
     color: #f9faf8;
     padding: 4px 20px;
     border-radius: 5px;
-    flex-shrink: 0;
+    
 }
 
 .hero button {
     border: 1px solid #3882f6;
+    margin-top: 5px;
+    flex-grow: 0;
+    box-sizing: border-box;
+    width: 88px;
 }
 
 .hero-img {
@@ -147,6 +164,7 @@ h2 {
 
 .action button {
     border: 1px solid #f9faf8;
+    flex-shrink: 0;
 }
 
 /*  FOOTER */
